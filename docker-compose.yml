@@ -1,0 +1,11 @@
+version: "3"
+services:
+  PostgreSQL:
+    restart: always
+    image: postgres:13.2
+    environment:
+      - POSTGRES_PASSWORD=pass123
+    ports:
+      - 5432:5432
+    volumes:
+      - /Users/vidoree/Develop/postgres_data/13.2:/var/lib/postgresql/data
